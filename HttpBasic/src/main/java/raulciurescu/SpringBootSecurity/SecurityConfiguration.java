@@ -44,6 +44,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/profile/**").authenticated()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .antMatchers("/management/**").hasAnyRole("ADMIN","MANAGER")
+//                .antMatchers("/api/public/api1").authenticated() // Granular protection
+                .antMatchers("/api/public/**").authenticated() // Protected with wildcards
+//                .antMatchers("/api/public/**").hasRole("ADMIN") // Protected with wildcards and Roles
                 .and()
                 .httpBasic();
     }

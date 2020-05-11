@@ -12,12 +12,8 @@ public class PublicRestApiController {
     }
 
     @GetMapping("api1")
-    public String api1() {
-        return "API1 Test";
-    }
+    public String api1() { return "API Test 1"; }
 
     @GetMapping("api2")
-    public String api2() {
-        return "API2 Test";
-    }
+    public String api2() { return "API Test 2"; }
 }
