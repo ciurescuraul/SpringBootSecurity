@@ -16,11 +16,17 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
                 .inMemoryAuthentication()
-                .withUser("raul").password(passwordEncoder().encode("raul123")).roles("ADMIN")
+                .withUser("raul")
+                    .password(passwordEncoder().encode("raul123"))
+                    .roles("ADMIN").authorities("ACCESS_API1","ACCESS_API2")
                 .and()
-                .withUser("user").password(passwordEncoder().encode("user123")).roles("USER")
+                .withUser("user")
+                    .password(passwordEncoder().encode("user123"))
+                    .roles("USER")
                 .and()
-                .withUser("manager").password(passwordEncoder().encode("manager123")).roles("MANAGER");
+                .withUser("manager")
+                    .password(passwordEncoder().encode("manager123"))
+                    .roles("MANAGER").authorities("ACCESS_API1");
     }
 
     @Override
@@ -45,8 +51,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .antMatchers("/management/**").hasAnyRole("ADMIN","MANAGER")
 //                .antMatchers("/api/public/api1").authenticated() // Granular protection
-                .antMatchers("/api/public/**").authenticated() // Protected with wildcards
+//                .antMatchers("/api/public/**").authenticated() // Protected with wildcards
 //                .antMatchers("/api/public/**").hasRole("ADMIN") // Protected with wildcards and Roles
+                .antMatchers("/api/public/api1").hasAuthority("ACCESS_API1") // Permission based authorization
+                .antMatchers("/api/public/api2").hasAuthority("ACCESS_API2") // Permission based authorization
                 .and()
                 .httpBasic();
     }
