@@ -21,6 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="03fe0387-ad47-49db-a528-1f5a457873df" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/raulciurescu/SpringBootSecurity/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bootsecurity.p12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +53,7 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -101,6 +106,9 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="845" y="382" key="#Notifications" timestamp="1589213594250">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -118,26 +126,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="154" y="93" width="1667" height="684" key="GrepConsoleSettings/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1589226415812" />
-    <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1589381329570">
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1589381478168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1589379753095" />
-    <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1589381329570" />
-    <state width="1877" height="187" key="GridCell.Tab.0.center" timestamp="1589381329569">
+    <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1589381478168" />
+    <state width="1877" height="187" key="GridCell.Tab.0.center" timestamp="1589381478168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1589379753095" />
-    <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1589381329569" />
-    <state width="1877" height="187" key="GridCell.Tab.0.left" timestamp="1589381329569">
+    <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1589381478168" />
+    <state width="1877" height="187" key="GridCell.Tab.0.left" timestamp="1589381478168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1589379753095" />
-    <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1589381329569" />
-    <state width="1877" height="187" key="GridCell.Tab.0.right" timestamp="1589381329569">
+    <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1589381478168" />
+    <state width="1877" height="187" key="GridCell.Tab.0.right" timestamp="1589381478168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1589379753095" />
-    <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1589381329569" />
+    <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1589381478168" />
     <state x="686" y="222" key="RollbackChangesDialog" timestamp="1589213459457">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
