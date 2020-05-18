@@ -16,17 +16,22 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
                 .inMemoryAuthentication()
+
+                .withUser("admin")
+                .password(passwordEncoder().encode("admin123"))
+                .authorities("ACCESS_API1","ACCESS_API2","ROLE_ADMIN")
+
+                .and()
+
                 .withUser("raul")
-                    .password(passwordEncoder().encode("raul123"))
-                    .roles("ADMIN").authorities("ACCESS_API1","ACCESS_API2")
+                .password(passwordEncoder().encode("raul123"))
+                .roles("USER")
+
                 .and()
-                .withUser("user")
-                    .password(passwordEncoder().encode("user123"))
-                    .roles("USER")
-                .and()
+
                 .withUser("manager")
-                    .password(passwordEncoder().encode("manager123"))
-                    .roles("MANAGER").authorities("ACCESS_API1");
+                .password(passwordEncoder().encode("manager123"))
+                .authorities("ACCESS_API1","ROLE_MANAGER");
     }
 
     @Override
@@ -49,18 +54,19 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/index").permitAll()
                 .antMatchers("/profile/**").authenticated()
                 .antMatchers("/admin/**").hasRole("ADMIN")
-                .antMatchers("/management/**").hasAnyRole("ADMIN","MANAGER")
+                .antMatchers("/management/**").hasAnyRole("ADMIN", "MANAGER")
 //                .antMatchers("/api/public/api1").authenticated() // Granular protection
 //                .antMatchers("/api/public/**").authenticated() // Protected with wildcards
 //                .antMatchers("/api/public/**").hasRole("ADMIN") // Protected with wildcards and Roles
                 .antMatchers("/api/public/api1").hasAuthority("ACCESS_API1") // Permission based authorization
                 .antMatchers("/api/public/api2").hasAuthority("ACCESS_API2") // Permission based authorization
+                .antMatchers("/api/public/users").hasRole("ADMIN")
                 .and()
                 .httpBasic();
     }
 
     @Bean
-    PasswordEncoder passwordEncoder(){
+    PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 }

@@ -1,21 +1,22 @@
 # SpringBootSecurity
-# #15 Enable HTTPS/SSL in Spring Boot
-**For Spring Boot apps running with Tomcat embedded server**
+## #15 Enable HTTPS/SSL in Spring Boot
+### For Spring Boot apps running with Tomcat embedded server
 
-1. Certificate <br>
-    a. Self Signed <br>
-    keytool -genkey -alias bootsecurity -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore bootsecurity.p12 -validity 3650
+1. Certificate
+    * Self Signed
+
+    _keytool -genkey -alias bootsecurity -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore bootsecurity.p12 -validity 3650_
     
-    b. Buy
+    * Buy
     
 2. Modify app.properties
 
-    server.port=8443
-    server.ssl.enabled=true
-    server.ssl.key-store: src/main/resources/bootsecurity.p12
-    server.ssl.key-store-password: bootsecurity
-    server.ssl.keyStoreType: PKCS12
-    server.ssl.keyAlias: bootsecurity
+    - server.port=8443
+    - server.ssl.enabled=true
+    - server.ssl.key-store: src/main/resources/bootsecurity.p12
+    - server.ssl.key-store-password: bootsecurity
+    - server.ssl.keyStoreType: PKCS12
+    - server.ssl.keyAlias: bootsecurity
 
 
 3. Add @Bean for ServletWebServerFactory
@@ -55,6 +56,21 @@
                  return connector;
              }
 
+## #16 Database Authentication - Overview
+
+1. Create user entity to store user information
+2. Store the User in our database
+3. Link our User entity with th built in classes in Spring Security
+    - Link User with UserDetails interface
+    - Link UserRepository with UserDetailsService interface
+4. Integrate Database Auth in our configuration
+
+## #17 Database Authentication - User Entity
+
+## #18 Database Authentication - User Repository
+
+## #19 Database Authentication - Implement User Details Service
+- Use Decorator Design Pattern
 
 
     
