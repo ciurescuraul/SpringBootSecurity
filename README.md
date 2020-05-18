@@ -72,5 +72,8 @@
 ## #19 Database Authentication - Implement User Details Service
 - Use Decorator Design Pattern
 
+## #20 Database Authentication - Configure Database Provider
+
+
 
     
