@@ -1,4 +1,4 @@
-package raulciurescu.SpringBootSecurity;
+package raulciurescu.SpringBootSecurity.security;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
