@@ -84,6 +84,21 @@
 
 ## #25 Customize Form Control Names - Form Authentication
 
+## #26 Spring Security Thymeleaf Integration
+## Views are security aware
+### Show / Hide content if user is authenticated or not
+### Show / Hide content if user has a role or a permission
+### Display user details such as name or permissions
+____
+##  Use Thymeleaf with Spring Security
+    1. Add POM dependency
+    <dependency>
+        <groupId>org.thymeleaf.extras</groupId>
+        <artifactId>thymeleaf-extras-springsecurity5</artifactId>
+    </dependency>
+
+    2. Use specific Thymeleaf security attributes
+
 
 
 

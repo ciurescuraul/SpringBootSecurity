@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="03fe0387-ad47-49db-a528-1f5a457873df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/raulciurescu/SpringBootSecurity/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raulciurescu/SpringBootSecurity/security/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/profile/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/profile/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,6 +135,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="894" y="408" key="#Custom_Plugin_Repositories" timestamp="1590429659857">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="894" y="408" key="#Custom_Plugin_Repositories/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590429659857" />
     <state x="845" y="382" key="#Notifications" timestamp="1589213594250">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -155,26 +159,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="154" y="93" width="1667" height="684" key="GrepConsoleSettings/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1589226415812" />
-    <state width="1877" height="422" key="GridCell.Tab.0.bottom" timestamp="1590423407725">
+    <state width="1877" height="422" key="GridCell.Tab.0.bottom" timestamp="1590430424308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1589379753095" />
-    <state width="1877" height="422" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590423407725" />
-    <state width="1877" height="422" key="GridCell.Tab.0.center" timestamp="1590423407725">
+    <state width="1877" height="422" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590430424308" />
+    <state width="1877" height="422" key="GridCell.Tab.0.center" timestamp="1590430424307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1589379753095" />
-    <state width="1877" height="422" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590423407725" />
-    <state width="1877" height="422" key="GridCell.Tab.0.left" timestamp="1590423407725">
+    <state width="1877" height="422" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590430424307" />
+    <state width="1877" height="422" key="GridCell.Tab.0.left" timestamp="1590430424307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1589379753095" />
-    <state width="1877" height="422" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590423407725" />
-    <state width="1877" height="422" key="GridCell.Tab.0.right" timestamp="1590423407725">
+    <state width="1877" height="422" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590430424307" />
+    <state width="1877" height="422" key="GridCell.Tab.0.right" timestamp="1590430424307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1589379753095" />
-    <state width="1877" height="422" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590423407725" />
+    <state width="1877" height="422" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590430424307" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1590418781585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -195,10 +199,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="686" y="222" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1589213459457" />
-    <state x="188" y="157" width="1653" height="711" key="SettingsEditor" timestamp="1590421878388">
+    <state x="188" y="157" width="1653" height="711" key="SettingsEditor" timestamp="1590429724993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="188" y="157" width="1653" height="711" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590421878388" />
+    <state x="188" y="157" width="1653" height="711" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590429724993" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
