@@ -78,6 +78,8 @@
 
 ## #22 Form Based Auth - Integrate Spring Security With Custom Login Form
 
+## #23 Implement Logout Action - Forms Authentication
+
 
 
 
