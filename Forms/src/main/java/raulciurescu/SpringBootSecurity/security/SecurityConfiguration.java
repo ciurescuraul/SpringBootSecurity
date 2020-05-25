@@ -55,11 +55,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .and()
                 //.httpBasic(); //Basic Authentication
                 .formLogin()
+                .loginProcessingUrl("/sign-in")
                 .loginPage("/login").permitAll()
+                .usernameParameter("txtUsername")
+                .passwordParameter("txtPassword")
                 .and()
                 .logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/login")
                 .and()
-                .rememberMe().tokenValiditySeconds(7776000).key("mySecret!");
+                .rememberMe().tokenValiditySeconds(7776000).key("mySecret!").rememberMeParameter("checkRememberMe"); // cookie valid for 90 days
     }
 
     @Bean

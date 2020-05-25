@@ -82,6 +82,8 @@
 
 ## #24 Implement Remember Me - Forms Authentication
 
+## #25 Customize Form Control Names - Form Authentication
+
 
 
 
