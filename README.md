@@ -80,6 +80,8 @@
 
 ## #23 Implement Logout Action - Forms Authentication
 
+## #24 Implement Remember Me - Forms Authentication
+
 
 
 
