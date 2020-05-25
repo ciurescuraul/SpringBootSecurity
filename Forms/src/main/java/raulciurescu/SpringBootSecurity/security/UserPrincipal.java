@@ -4,6 +4,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import raulciurescu.SpringBootSecurity.model.User;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -60,6 +61,6 @@ public class UserPrincipal implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return this.user.getActive() == 1;
+        return user.getActive() == 1;
     }
 }

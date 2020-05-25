@@ -13,7 +13,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
-
     private UserPrincipalDetailsService userPrincipalDetailsService;
 
     public SecurityConfiguration(UserPrincipalDetailsService userPrincipalDetailsService) {
@@ -53,7 +52,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/api/public/api2").hasAuthority("ACCESS_API2") // Permission based authorization
                 .antMatchers("/api/public/users").hasRole("ADMIN")
                 .and()
-                .httpBasic();
+                //.httpBasic(); //Basic Authentication
+                .formLogin()
+                .loginPage("/login").permitAll();
     }
 
     @Bean

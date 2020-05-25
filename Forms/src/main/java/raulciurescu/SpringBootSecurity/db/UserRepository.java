@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 import raulciurescu.SpringBootSecurity.model.User;
 
 @Repository
-public interface UserRepository extends JpaRepository<User,Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
     // Retrieve users from database by username
     User findByUsername(String username);
 }

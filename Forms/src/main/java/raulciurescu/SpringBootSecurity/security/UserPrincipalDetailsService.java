@@ -9,6 +9,7 @@ import raulciurescu.SpringBootSecurity.model.User;
 
 @Service
 public class UserPrincipalDetailsService implements UserDetailsService {
+
     private UserRepository userRepository;
 
     public UserPrincipalDetailsService(UserRepository userRepository) {
@@ -16,8 +17,8 @@ public class UserPrincipalDetailsService implements UserDetailsService {
     }
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = this.userRepository.findByUsername(username);
+    public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
+        User user = this.userRepository.findByUsername(s);
         UserPrincipal userPrincipal = new UserPrincipal(user);
 
         return userPrincipal;
