@@ -100,6 +100,8 @@ ____
     2. Use specific Thymeleaf security attributes
 
 
+## #27 JWT(JSON Web Tokens) Authentication - When Should You Use JWT Security ?
+
 
 
     
