@@ -100,8 +100,15 @@ ____
     2. Use specific Thymeleaf security attributes
 
 
-## #27 JWT(JSON Web Tokens) Authentication - When Should You Use JWT Security ?
+## #27 JWT (JSON Web Tokens) Authentication - When Should You Use JWT Security ?
+1. When you want to centralize authorization and authentification part of your application.
+2. You want to deliver one ore more Web Applications.
+3. You may also want to expose parts of your bussiness logic or parts of your application to third party customers.
+4. When you want to create a Mobile App.
 
+- CORS Enabled
+- Cross Origin Resource Sharing
 
+## #28 JWT (JSON Web Tokens) - Sample Application & JWT Dependencies
 
     
