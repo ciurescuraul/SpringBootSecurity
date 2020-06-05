@@ -115,4 +115,6 @@ ____
 
 ## #30 JWT (JSON Web Tokens) - Implement JWT Authorization
 
+## #31 JWT (JSON Web Tokens) - Spring Security JWT Configuration
+
     

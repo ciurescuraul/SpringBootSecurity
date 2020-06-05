@@ -20,7 +20,7 @@ public class PublicRestApiController {
     }
     // Available to all authenticated users
     @GetMapping("api")
-    public String api() { return "API Test 1"; }
+    public String api() { return "API Test With User Logged in "; }
 
     // Available to managers
     @GetMapping("management/reports")
