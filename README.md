@@ -111,4 +111,6 @@ ____
 
 ## #28 JWT (JSON Web Tokens) - Sample Application & JWT Dependencies
 
+## #29 JWT (JSON Web Tokens) - Implement JWT Authentication
+
     
