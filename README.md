@@ -113,4 +113,6 @@ ____
 
 ## #29 JWT (JSON Web Tokens) - Implement JWT Authentication
 
+## #30 JWT (JSON Web Tokens) - Implement JWT Authorization
+
     
