@@ -1,6 +1,35 @@
-# SpringBootSecurity
-## #15 Enable HTTPS/SSL in Spring Boot
-### For Spring Boot apps running with Tomcat embedded server
+# Spring Boot Security
+
+### #03 Authorities and Roles
+   In Spring Security, granted authorities and roles are a form of expressing a privilege/permission for an authenticated user.
+
+### #04 HTTP Basic Authentication
+   In the context of HTTP, basic authentication is the process for browser to request a username and password when making a request in order to authentify the user
+
+### #05 Form Based Authentication
+   It is the process of authenticating a user by presenting a custom HTML page that will collect credentials and by directing the authentication responsibility to the web application that collects the form data.
+
+### #06 Token Based Authentication using JWT https://jwt.io
+   JSON Web Tokens (JWT) is a compact and safe way to transmit data between two parties. The information cand be trusted because it is digitally signed.
+
+#### JWT Structure
+JSON Web Tokens consist of three parts separated by dots(.)
+
+      1. Header
+      2. Payload
+      3. Signature
+Example: hhhhh.pppppppp.ssssssss
+
+### #07 SSL & HTTPS
+   HTTPS is a combination of HTTP plus SSL security layer on top of it. HTTPS is just HTTP that delivers data securely between endpoints.
+
+      1. Self-Signed (Created by you) -> Good for development
+      2. Signed by Trusted Authority (Comodo, Symantec, DigiCert, etc)
+
+   SSL is mandatory for any web application, regardless of the chosen security config
+   
+### #15 Enable HTTPS/SSL in Spring Boot
+#### For Spring Boot apps running with Tomcat embedded server
 
 1. Certificate
     * Self Signed
